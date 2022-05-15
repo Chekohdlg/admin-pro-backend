@@ -17,8 +17,11 @@ app.use( express.json());
 dbConnection();
 
 //Rutasd
-app.use('/api/usuarios', require('./routes/usuarios'))
-app.use('/api/login', require('./routes/auth'))
+app.use('/api/usuarios', require('./routes/usuarios'));
+
+app.use('/api/login', require('./routes/auth'));
+
+app.use('/api/productos', require('./routes/productos'));
 
 
 
